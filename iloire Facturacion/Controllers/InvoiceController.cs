@@ -319,7 +319,7 @@ namespace iloire_Facturacion.Controllers
                     }
                 }
 
-                db.Entry(invoice).State = EntityState.Modified;
+                db.Entry(invoice).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index", new { proposal = proposal });
             }

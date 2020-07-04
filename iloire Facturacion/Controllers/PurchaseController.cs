@@ -157,7 +157,7 @@ namespace iloire_Facturacion.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(purchase).State = EntityState.Modified;
+                db.Entry(purchase).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

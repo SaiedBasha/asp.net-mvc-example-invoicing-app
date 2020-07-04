@@ -11,9 +11,10 @@ namespace iloire_Facturacion_Tests
     [TestFixture]
     public class CustomerTest
     {
+
         [TestFixtureSetUp]
         public void TestSetup() {
-            System.Data.Entity.Database.SetInitializer(new EntitiesContextInitializer());
+            //System.Data.Entity.Database.SetInitializer(new EntitiesContextInitializer());
         }
 
         [Test]

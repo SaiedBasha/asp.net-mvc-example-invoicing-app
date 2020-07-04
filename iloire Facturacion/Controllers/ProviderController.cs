@@ -114,7 +114,7 @@ namespace iloire_Facturacion.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(provider).State = EntityState.Modified;
+                db.Entry(provider).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

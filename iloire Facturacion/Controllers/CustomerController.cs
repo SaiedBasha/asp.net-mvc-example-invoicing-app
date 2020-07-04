@@ -109,7 +109,7 @@ namespace iloire_Facturacion.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(customer).State = EntityState.Modified;
+                db.Entry(customer).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 //return RedirectToAction("Index");
                 //return list of customers as it is ajax request

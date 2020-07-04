@@ -70,7 +70,7 @@ namespace iloire_Facturacion.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(purchasetype).State = EntityState.Modified;
+                db.Entry(purchasetype).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

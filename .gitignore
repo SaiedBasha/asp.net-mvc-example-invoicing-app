@@ -6,3 +6,10 @@ iloire Facturacion Tests/*.dll
 *.suo
 iloire Facturacion/App_Error/*
 *.sdf
+Backup/
+Packages/
+iloire Facturacion/_bin_deployableAssemblies/
+.vs/
+.git/
+/*.user
+/UpgradeLog.htm

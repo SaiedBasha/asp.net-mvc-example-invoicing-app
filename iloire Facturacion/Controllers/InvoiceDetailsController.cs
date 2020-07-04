@@ -132,7 +132,7 @@ namespace iloire_Facturacion.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(invoicedetails).State = EntityState.Modified;
+                db.Entry(invoicedetails).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 var invoice = (from i in db.Invoices where i.InvoiceID == invoicedetails.InvoiceID select i).FirstOrDefault();
                 ViewBag.Invoice = invoice;
